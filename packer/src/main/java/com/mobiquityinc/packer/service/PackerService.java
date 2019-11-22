@@ -1,10 +1,10 @@
-package com.jeantravassos.packageservice.service;
+package com.mobiquityinc.packer.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
 
-import com.jeantravassos.packageservice.exception.APIException;
+import com.mobiquityinc.packer.exception.APIException;
 
 @Service
 @EnableConfigurationProperties(Packer.class)

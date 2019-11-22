@@ -1,4 +1,4 @@
-package com.jeantravassos.packageservice;
+package com.mobiquityinc.packer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -11,22 +11,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.jeantravassos.packageservice.exception.APIException;
-import com.jeantravassos.packageservice.service.PackerService;
+import com.mobiquityinc.packer.exception.APIException;
+import com.mobiquityinc.packer.service.PackerService;
 
 @SpringBootTest("service.pack=Mobiquity!!!")
-class PackerServiceTests {
-
+class PackerApplicationTests {
 
 	@Autowired
     private PackerService packerService;
 	
-    @Test
-    public void contextLoads() {
+	@Test
+	void contextLoads() {
+	}
 
-    }
-
-    @SpringBootApplication
+	@SpringBootApplication
     static class TestConfiguration {
     }
     
@@ -55,5 +53,4 @@ class PackerServiceTests {
     	
     
     }
-    
 }

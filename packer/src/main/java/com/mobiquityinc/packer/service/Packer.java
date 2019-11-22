@@ -1,4 +1,4 @@
-package com.jeantravassos.packageservice.service;
+package com.mobiquityinc.packer.service;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -14,8 +14,8 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import com.jeantravassos.packageservice.dto.Package;
-import com.jeantravassos.packageservice.exception.APIException;
+import com.mobiquityinc.packer.dto.Package;
+import com.mobiquityinc.packer.exception.APIException;
 
 @ConfigurationProperties("service")
 public class Packer {
