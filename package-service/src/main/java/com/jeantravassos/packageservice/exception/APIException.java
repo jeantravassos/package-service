@@ -2,11 +2,13 @@ package com.jeantravassos.packageservice.exception;
 
 public class APIException extends Exception {
 
-  public APIException(String message, Exception e) {
-    super(message, e);
-  }
+	private static final long serialVersionUID = 8737342459129046092L;
 
-  public APIException(String message) {
-    super(message);
-  }
+	public APIException(String message, Exception e) {
+		super(message, e);
+	}
+
+	public APIException(String message) {
+		super(message);
+	}
 }
